@@ -4,13 +4,11 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:material_dialogs/material_dialogs.dart';
 import 'package:material_dialogs/shared/types.dart';
-import 'package:pointly/pages/home/controllers/homepage_controller.dart';
-import 'package:pointly/pages/home/controllers/room_controller.dart';
-import 'package:pointly/services/app_colors.dart';
+import 'package:projectname/pages/home/controllers/homepage_controller.dart';
+import 'package:projectname/services/app_colors.dart';
 
 class CustomDialog {
-  simple(HomePageController homePageController, RoomController roomController,
-      String title, String body,
+  simple(HomePageController homePageController, String title, String body,
       {List<Widget>? actions}) {
     dismissIfAny(homePageController);
 
@@ -36,15 +34,15 @@ class CustomDialog {
               letterSpacing: -0.5),
           barrierColor: Colors.black.withOpacity(0.5),
           actions: actions);
-      if (!homePageController.anyDialogOpen) {
-        homePageController.anyDialogOpen = true;
+      if (!homePageController.anyDialogOpen.value) {
+        homePageController.anyDialogOpen.value = true;
       }
     } catch (e) {
       debugPrint('\n');
     }
   }
 
-  custom(HomePageController homePageController, RoomController roomController,
+  custom(HomePageController homePageController,
       {Widget? body, List<Widget>? actions}) {
     dismissIfAny(homePageController);
 
@@ -57,15 +55,15 @@ class CustomDialog {
         barrierColor: Colors.black.withOpacity(0.5),
         context: Get.context!,
         actions: actions);
-    if (!homePageController.anyDialogOpen) {
-      homePageController.anyDialogOpen = true;
+    if (!homePageController.anyDialogOpen.value) {
+      homePageController.anyDialogOpen.value = true;
     }
   }
 
   dismissIfAny(HomePageController homePageController) {
-    if (homePageController.anyDialogOpen) {
+    if (homePageController.anyDialogOpen.value) {
       Navigator.pop(Get.context!);
-      homePageController.anyDialogOpen = false;
+      homePageController.anyDialogOpen.value = false;
     }
   }
 }

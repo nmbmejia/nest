@@ -1,4 +1,4 @@
-import 'package:pointly/widgets/string_extension.dart';
+import 'package:projectname/widgets/string_extension.dart';
 
 class Strings {
   //

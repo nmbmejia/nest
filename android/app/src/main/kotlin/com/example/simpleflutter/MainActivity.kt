@@ -1,4 +1,4 @@
-package com.dvo.pointly
+package com.projectname.projectname
 
 import io.flutter.embedding.android.FlutterActivity
 

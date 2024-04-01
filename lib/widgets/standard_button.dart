@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pointly/services/app_colors.dart';
+import 'package:projectname/services/app_colors.dart';
 
 Widget customButton(String text,
     {double? width,

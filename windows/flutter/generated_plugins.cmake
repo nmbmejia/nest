@@ -3,7 +3,6 @@
 #
 
 list(APPEND FLUTTER_PLUGIN_LIST
-  geolocator_windows
   holdable_button
   permission_handler_windows
   platform_device_id_windows

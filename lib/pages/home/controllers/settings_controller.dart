@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
-import 'package:pointly/pages/home/controllers/homepage_controller.dart';
+import 'package:projectname/pages/home/controllers/homepage_controller.dart';
 
 enum LimitingUnit { mins, hours, days }
 

@@ -2,10 +2,9 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_styled_toast/flutter_styled_toast.dart';
 import 'package:get/get.dart';
-import 'package:pointly/pages/initial/initial.dart';
+import 'package:projectname/pages/initial/initial.dart';
 
-//  fvm flutter pub global run rename setAppName --value "pointly"  --rename package
-// AIzaSyA781auBMI0g-gvXdbKSk_hlFq3UxlG5CA
+//  fvm flutter pub global run rename setAppName --value "projectname"  --rename package
 void main() {
   runApp(const MyApp());
 }

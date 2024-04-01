@@ -1,6 +1,6 @@
-# OneRent
+# Projectname
 
-One stop rental shop
+projectname
 
 ## Getting Started
 

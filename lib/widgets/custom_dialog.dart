@@ -21,13 +21,13 @@ class CustomDialog {
           color: AppColors.primaryColor,
           context: Get.context!,
           msgAlign: TextAlign.center,
-          msgStyle: const TextStyle(
+          msgStyle: TextStyle(
               color: AppColors.whiteColor,
               fontSize: 12,
               fontWeight: FontWeight.normal,
               letterSpacing: -0.3),
           titleAlign: TextAlign.center,
-          titleStyle: const TextStyle(
+          titleStyle: TextStyle(
               color: AppColors.whiteColor,
               fontSize: 16,
               fontWeight: FontWeight.bold,

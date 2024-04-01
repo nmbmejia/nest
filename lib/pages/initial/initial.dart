@@ -31,19 +31,19 @@ class _InitialPageState extends State<InitialPage> {
                 child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                const Text(Strings.appName,
+                Text(Strings.appName,
                     style: TextStyle(
                         color: AppColors.whiteColor,
                         fontSize: 45,
                         fontWeight: FontWeight.bold,
                         letterSpacing: -3)),
-                const Text(Strings.appSubtitle,
+                Text(Strings.appSubtitle,
                     style: TextStyle(
                         color: AppColors.whiteColor,
                         fontSize: 14,
                         fontWeight: FontWeight.normal,
                         letterSpacing: -0.5)),
-                customButton(Strings.startNowButton,
+                customButton(Strings.beginBtn,
                     onPressed: () =>
                         initialController.checkUserDetailsIfExists()),
               ],

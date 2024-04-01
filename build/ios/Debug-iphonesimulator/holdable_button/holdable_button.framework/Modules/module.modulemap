@@ -1,0 +1,11 @@
+framework module holdable_button {
+  umbrella header "holdable_button-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module holdable_button.Swift {
+  header "holdable_button-Swift.h"
+  requires objc
+}

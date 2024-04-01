@@ -1,0 +1,73 @@
+name: pointly
+description: quickeasylocationsharing
+
+publish_to: "none"
+
+version: 1.0.0+1
+#FVM USE 3.19.0 stable
+
+environment:
+  sdk: ">=2.17.3 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  get:
+  http: ^1.1.0
+  countup: ^0.1.4
+  animated_text_kit: ^4.2.2
+  percent_indicator: ^4.2.3
+  google_maps_flutter: ^2.5.3
+  google_maps_flutter_web: ^0.5.4+2
+  geolocator: ^11.0.0
+  cupertino_icons: ^1.0.2
+  rename: ^3.0.1
+  google_fonts: ^6.1.0
+  fluttertoast: ^8.2.2
+  shared_preferences: ^2.2.2
+  animated_menu: ^1.0.2
+  share_plus: ^7.2.1
+  platform_device_id: ^1.0.1
+  battery_info: ^1.1.1
+  flutter_styled_toast: ^2.2.1
+  permission_handler: ^11.2.1
+  timeago: ^3.6.1
+  material_dialogs: ^1.1.4
+  mask_text_input_formatter: ^2.8.0
+  easy_debounce: ^2.0.3
+  holdable_button: ^0.0.9
+  animated_marker: ^0.0.5
+  custom_marker: ^1.0.0
+  widget_to_marker: ^1.0.4
+  device_info_plus: ^9.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons:
+
+  flutter_lints: ^3.0.1
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/icon.png"
+
+  #min_sdk_android: 21 # android min sdk min:16, default 21
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icon/
+
+  fonts:
+    - family: OpenSans
+      fonts:
+        - asset: assets/fonts/OpenSans-Regular.ttf
+        - asset: assets/fonts/OpenSans-Medium.ttf
+        - asset: assets/fonts/OpenSans-Bold.ttf
+        - asset: assets/fonts/OpenSans-Light.ttf
+        - asset: assets/fonts/OpenSans-SemiBold.ttf
+        - asset: assets/fonts/OpenSans-ExtraBold.ttf

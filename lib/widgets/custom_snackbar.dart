@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_styled_toast/flutter_styled_toast.dart';
 import 'package:get/get.dart';
-import 'package:projectname/services/app_colors.dart';
+import 'package:nest/services/app_colors.dart';
 
 class CustomSnackbar {
   simple(String content) {

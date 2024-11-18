@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:projectname/pages/home/controllers/homepage_controller.dart';
+import 'package:nest/pages/home/controllers/homepage_controller.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -21,7 +21,9 @@ class _HomePageState extends State<HomePage> {
     return GetBuilder<HomePageController>(builder: (homepageController) {
       return const Scaffold(
         body: Column(
-          children: [],
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [Center(child: Text('Login Screen'))],
         ),
       );
     });
